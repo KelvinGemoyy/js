@@ -2,9 +2,9 @@
   "name": "belajar-webpack",
   "version": "1.0.0",
   "description": "",
- "private": true,
+  "private": true,
   "scripts": {
-    "build":"webpack"
+    "build": "webpack"
   },
   "repository": {
     "type": "git",
@@ -16,5 +16,9 @@
   "bugs": {
     "url": "https://github.com/KelvinGemoyy/js/issues"
   },
-  "homepage": "https://github.com/KelvinGemoyy/js#readme"
+  "homepage": "https://github.com/KelvinGemoyy/js#readme",
+  "devDependencies": {
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4"
+  }
 }
