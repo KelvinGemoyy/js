@@ -1,4 +1,6 @@
 const methodMahasiswa = {
+    nama: "Kelvin",
+    energi: 20,
     makan: function (porsi) {
         this.energi += porsi;
         console.log(`Halo ${this.nama},selamat makan`);
@@ -24,8 +26,13 @@ function  Mahasiswa (nama,energi) {
     mahasiswa.tidur = methodMahasiswa.tidur
 
     return mahasiswa;
+    console.log(mahasiswa);
 };
 
 let kelvin = Mahasiswa('kelvin', 20);
 let falah = Mahasiswa('falah', 30);
+
+console.log(kelvin);
+console.log(methodMahasiswa);
+console.log(Mahasiswa);
 
