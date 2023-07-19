@@ -20,14 +20,23 @@ kelvin.namaBelakang = 'Raditya';
 
 const falah = new OrangBaru();
 
-//function PremiumMember ( ) {
-   
-//}
 
-// Constructor Inheritance
-function Employee(firstName) {
-    this.firstName = firstName;
-    this.sayHello = function (name) {
-        console.info(`hi ${name}, my name is ${this.firstName}`);
-    }
-}
+
+    // Constructor Inheritance
+    function Employee(firstName) {
+        this.firstName = firstName;
+        this.sayHello = function (name) {
+            console.info(`hi ${name}, my name is ${this.firstName}`);
+        }
+    };
+
+    function Manager (firstName, lastName) {
+        this.lastName = lastName;
+        Employee.call(this, firstName);
+    };
+
+    const thirza = new Manager('Nur', 'Zanetta');
+    console.log(thirza);
+
+    // Prototype Inheritance
+    
