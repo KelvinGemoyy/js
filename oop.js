@@ -39,4 +39,5 @@ const falah = new OrangBaru();
     console.log(thirza);
 
     // Prototype Inheritance
+    // Object Instance
     
