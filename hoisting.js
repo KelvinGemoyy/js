@@ -1,7 +1,7 @@
 // Execution Context, Hoisting and Scope
 
-const nma = 'kelvin';
-console.log(nama);
+//const nma = 'kelvin';
+//console.log(nama);
 
 // Creation Phase Pada Global Context
 // Nama Var = undified
@@ -12,15 +12,20 @@ console.log(nama);
 
 // Execution Phase
 
-console.log(sayHello);
+//console.log(sayHello);
 
-var nama = 'Falah';
-var umur = 16;
+//var nama = 'Falah';
+//var umur = 16;
 
-function sayHello() {
-    console.log(`Halo, nama saya ${nama} dan umur saya ${umur} tahun `);
-}
+//function sayHello() {
+//   console.log(`Halo, nama saya ${nama} dan umur saya ${umur} tahun `);
+//}
 
 // Function membuat local execution context
+// Yang di dalamnya terdapat creation dan execution context
+// window
+// argument
+// hoisting
+
 
 
