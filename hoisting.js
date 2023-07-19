@@ -1,7 +1,7 @@
 // Execution Context, Hoisting and Scope
 
-//const nma = 'kelvin';
-//console.log(nama);
+ const nama = 'kelvin';
+ console.log(nama);
 
 // Creation Phase Pada Global Context
 // Nama Var = undified
