@@ -1,24 +1,25 @@
 // Execution Context, Hoisting and Scope
 
- const nama = 'kelvin';
- console.log(nama);
+// console.log(nama);
+// var nama;
 
 // Creation Phase Pada Global Context
 // Nama Var = undified
 // Nama Function = fn()
 // Hoisting
 // Window = Global Object
-// This = Window 
+// This = Window
 
-// Execution Phase
+//Execution Phase
 
-//console.log(sayHello);
+//console.log();
 
-//var nama = 'Falah';
-//var umur = 16;
+// var cetak = sayHello();
 
-//function sayHello() {
-//   console.log(`Halo, nama saya ${nama} dan umur saya ${umur} tahun `);
+// // function sayHello() {
+// var nama = "Falah";
+//  var umur = 16;
+// return `Halo, nama saya ${nama} dan umur saya ${umur} tahun `;
 //}
 
 // Function membuat local execution context
@@ -26,6 +27,12 @@
 // window
 // argument
 // hoisting
+kenal();
+function kenal() {
+  var nama = "kelvin";
+  var angka = 16;
 
+  return angka;
+}
 
-
+console.log(kenal());
