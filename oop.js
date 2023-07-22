@@ -41,17 +41,21 @@
     // Prototype Inheritance
     // Object Instance
 
-    function Person (firstName,lastName) {
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.sayHello = funtion (name) {
-            console.info(`Hello ${name}, my name is ${this.firstName}`);
-        }
-    }
+   function Employee(name) {
+    this.name = name;
+   }
 
-    const kelvin = new Person ('Muhammad','Falah');
-    const thirza = new Person ('Nur','Zanetta');
+   function Manager(name) {
+     this.name = name;
+   }
 
-    console.log(kelvin);
-    console.log(thirza);
+   Manager.prototype = Employee.prototype;
+
+   Manager.prototype.sayHello = function (name) {
+    console.info(`Hello ${name}, my name is Manager ${this.name}`);
+   }
+
+   Employee.prototype.sayHello = function (name) {
+    console.info(`Hello ${name}, my name is Employee ${this.name}`);
+   }
     
