@@ -55,11 +55,11 @@
   
 
    Manager.prototype.sayHello = function (name) {
-    console.info(`Hello ${name}, my name is Manager ${this.name}`);
+    console.log(`Hello ${name}, my name is Manager ${this.name}`);
    }
 
    Employee.prototype.sayHello = function (name) {
-    console.info(`Hello ${name}, my name is Employee ${this.name}`);
+    console.log(`Hello ${name}, my name is Employee ${this.name}`);
    }
 
    const employee = new Employee ('kelvin');
