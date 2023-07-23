@@ -1,11 +1,11 @@
 
 
-// Function Constructor
+//* Function Constructor
 // Di function consttructor kita mmebuat semua huruf var menjadi kapital
 // Ketika membuat const function kita membuat keyword new
 // Menambahkan property this pada const function
 
-// contoh 1
+//* contoh 1
 // function OrangBaru(namaDepan,namaBelakang) {
 //    this.namaDepan ='';
 //    this.namaBelakang = '';
@@ -22,7 +22,7 @@
 
 
 
-//     // Constructor Inheritance
+//*     // Constructor Inheritance
 //     function Employee(firstName) {
 //         this.firstName = firstName;
 //         this.sayHello = function (name) {
@@ -38,8 +38,8 @@
 //     const thirza = new Manager('Nur', 'Zanetta');
 //     console.log(thirza);
 
-    // Prototype Inheritance
-    // Object Instance
+    //* Prototype Inheritance
+    //* Object Instance
 
 //    function Employee(name) {
 //     this.name = name;
@@ -72,5 +72,9 @@
 //    console.log(manager.sayHello);
 //    console.log(employee);
 //    console.log(manager);
+
+//*   Membuat Class
+//    Sejak ES6,di perkenalkan kata kunci baru yaitu class,ini merupakan kata kunci yang di gunakan  untuk membuak class  di Javascript
+//    Dengan kata kunci class,kita tidak perlu lagi menggunakan constructor function yang membuat class
 
     
