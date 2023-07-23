@@ -49,7 +49,10 @@
      this.name = name;
    }
 
-   //Manager.prototype = Employee.prototype;
+   //! Manager.prototype = Employee.prototype; salah
+   //* Yang benar adalah:
+   Manager.prototype = Object.create(Employee.prototype);
+  
 
    Manager.prototype.sayHello = function (name) {
     console.info(`Hello ${name}, my name is Manager ${this.name}`);
