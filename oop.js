@@ -76,7 +76,8 @@
 //*   Membuat Class
 //    Sejak ES6,di perkenalkan kata kunci baru yaitu class,ini merupakan kata kunci yang di gunakan  untuk membuak class  di Javascript
 //    Dengan kata kunci class,kita tidak perlu lagi menggunakan constructor function yang membuat class
-
+     
+      const name ='Jannah';
       class Person {
                constructor(name) {
                 this.name = name;
@@ -95,7 +96,8 @@
       const thirza = new Person('thirza')
       console.info(thirza)
       console.log(constructor);
-
+      console.log(name);
+      console.log(this.sayHello);
       //* Method di class
       
 
