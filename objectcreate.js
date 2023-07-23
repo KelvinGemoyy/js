@@ -1,38 +1,34 @@
-const methodMahasiswa = {
-    nama: "Kelvin",
-    energi: 20,
-    makan: function (porsi) {
-        this.energi += porsi;
-        console.log(`Halo ${this.nama},selamat makan`);
-    },
+// 
 
-    main: function (jam) {
-        this.energi -= jam;
-        console.log(`Halo ${this.nama}, selamat bermain`);
-    },
+function Employee(name) {
+    this.name = name;
+   }
 
-    tidur: function (jam) {
-        this.energi += jam * 2;
-        console.log(`Halo ${this.nama}, selamat tidur`);
-    }
-};
+   function Manager(name) {
+     this.name = name;
+   }
 
-function  Mahasiswa (nama,energi) {    
-    let mahasiswa = Object.create(methodMahasiswa);
-    mahasiswa.nama = nama;
-    mahasiswa.energi = energi;
-    mahasiswa.makan = methodMahasiswa.makan;
-    mahasiswa.main = methodMahasiswa.main;
-    mahasiswa.tidur = methodMahasiswa.tidur
+   //! Manager.prototype = Employee.prototype; salah
+   //* Yang benar adalah:
+   Manager.prototype = Object.create(Employee.prototype);
+  
 
-    return mahasiswa;
-    console.log(mahasiswa);
-};
+   Manager.prototype.sayHello = function (name) {
+    console.log(`Hello ${name}, my name is Manager ${this.name}`);
+   }
 
-let kelvin = Mahasiswa('kelvin', 20);
-let falah = Mahasiswa('falah', 30);
+   Employee.prototype.sayHello = function (name) {
+    console.log(`Hello ${name}, my name is Employee ${this.name}`);
+   }
 
-console.log(kelvin);
-console.log(methodMahasiswa);
-console.log(Mahasiswa);
+   const employee = new Employee ('kelvin');
+   employee.sayHello('thirza');
+
+
+   const manager = new Manager ('thirza');
+   manager.sayHello (`kelvin`)
+
+   console.log(manager.sayHello);
+   console.log(employee);
+   console.log(manager);
 
