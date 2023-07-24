@@ -110,6 +110,8 @@
             console.info(`Halo ${name},nama saya adalah ${this.name}`)
         }
     }
+
+  
       
 
 

@@ -32,10 +32,23 @@
 //    console.log(employee);
 //    console.log(manager);
 
-//*   Membuat Class
-      class Person {
+//*   Membuat Class Inheritance
+     
+      class Cewe {
+        constructor(umur, ukuran, tanggal) {
+          this.umur = umur;
+          this.ukuran = ukuran;
+          this.tanggal = taggal;
+        }
 
+        start() {
+          console.log('Sedang di mulai..');
+        }
+
+        stop() {
+          console.log('Telah selesai..');
+        }
       }
 
-      const kelvin = new Person();
-      console.info(kelvin)
+      const myCewe = new Cewe ('Fulan',16,'25 Mei')
+      console.info(perkosa());
