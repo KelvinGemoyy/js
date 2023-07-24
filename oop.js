@@ -74,31 +74,42 @@
 //    console.log(manager);
 
 //*   Membuat Class
+//*   Method Di Class
 //    Sejak ES6,di perkenalkan kata kunci baru yaitu class,ini merupakan kata kunci yang di gunakan  untuk membuak class  di Javascript
 //    Dengan kata kunci class,kita tidak perlu lagi menggunakan constructor function yang membuat class
      
       const name ='Jannah';
-      class Person {
-               constructor(name) {
-                this.name = name;
-                this.sayHello = function (name) {
-                    console.info(`hai nama aku ${name},salam kenal yah${this.name}`)
-                }
-               }
-      }
+    //   class Person {
+    //            constructor(name) {
+    //             this.name = name;
+    //            }
+
+    //            sayHello(name) {
+    //             console.log(`Hai ${name},nama saya ${this.name}`);
+    //            }
+    //   }
 
       
 
-      const kelvin = new Person('Kelvin');
-      console.info(kelvin);
-      console.info(kelvin.name);
+    //   const kelvin = new Person('Kelvin');
+    //   console.info(kelvin);
+    //   kelvin.sayHello('tasya');
+      
 
-      const thirza = new Person('thirza')
-      console.info(thirza)
-      console.log(constructor);
-      console.log(name);
-      console.log(this.sayHello);
-      //* Method di class
+    //   const thirza = new Person('thirza')
+    //   thirza.sayHello('kelvin')
+    //   console.info(thirza)
+    //   console.log(Person);
+     
+    //*  Class Inheritance
+    class Employee{
+        constructor(name) {
+            this.name = name;
+        }
+        sayHello(name) {
+            console.info(`Halo ${name},nama saya adalah ${this.name}`)
+        }
+    }
       
 
 
