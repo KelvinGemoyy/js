@@ -111,7 +111,15 @@
         }
     }
 
-  
+    class Manager extends Employee {
+        constructor(name) {
+            this.name = name;
+        }
+    }
+
+    sayHello(name) {
+        console.log(`Hai ${name}, nama saya adalah ${this.name}`);
+    }
       
 
 
