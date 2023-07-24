@@ -38,7 +38,7 @@
         constructor(umur, ukuran, tanggal) {
           this.umur = umur;
           this.ukuran = ukuran;
-          this.tanggal = taggal;
+          this.tanggal = tanggal;
         }
 
         start() {
@@ -51,4 +51,8 @@
       }
 
       const myCewe = new Cewe ('Fulan',16,'25 Mei')
-      console.info(perkosa());
+      console.log(this.umur);
+      console.log(this.tanggal);
+      console.log(this.ukuran);
+      console.log(start());
+      console.log(stop());
