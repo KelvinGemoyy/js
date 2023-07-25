@@ -102,35 +102,36 @@
     //   console.log(Person);
      
     //*  Class Inheritance
-    class Employee{
+  //   class Employee{
 
-        constructor(name) {
-          this.name = name;
-        }
+  //       constructor(name) {
+  //         this.name = name;
+  //       }
        
-        sayHello(name) {
-            console.info(`Hello ${name},my name is employee ${this.name}`)
-        }
-    }
+  //       sayHello(name) {
+  //           console.info(`Hello ${name},my name is employee ${this.name}`)
+  //       }
+  //   }
 
-   class Manager extends Employee {
+  //  class Manager extends Employee {
 
-     sayHello(name) {
-        console.info(`Hello ${name},my name is manager ${this.name}`)
-     }
-   }
+  //    sayHello(name) {
+  //       console.info(`Hello ${name},my name is manager ${this.name}`)
+  //    }
+  //  }
 
-   const kelvin = new Employee();
-   kelvin.name = 'kelvin';
-   kelvin.sayHello('thirza');
+  //  const kelvin = new Employee();
+  //  kelvin.name = 'kelvin';
+  //  kelvin.sayHello('thirza');
     
-   const thirza = new Manager();
-   thirza.name = 'thirza';
-   thirza.sayHello('thirza');
+  //  const thirza = new Manager();
+  //  thirza.name = 'thirza';
+  //  thirza.sayHello('thirza');
 
-   console.log(sayHello());
+  //  console.log(sayHello());
     
-   //* Super Constructor
+  //* Super Constructor
+
    
 
 
