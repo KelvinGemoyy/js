@@ -127,6 +127,8 @@
    const thirza = new Manager();
    thirza.name = 'thirza';
    thirza.sayHello('thirza');
+
+   console.log(sayHello());
     
    //* Super Constructor
    
