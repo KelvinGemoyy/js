@@ -41,39 +41,39 @@
     //* Prototype Inheritance
     //* Object Instance 
 
-  //  function Employee(name) {
-  //   this.name = name;
-  //  }
+   function Employee(name) {
+    this.name = name;
+   }
 
-  //  function Manager(name) {
-  //    this.name = name;
-  //  }
+   function Manager(name) {
+     this.name = name;
+   }
 
    //! Cara yang salah adalah
    //! Manager.prototype = Employee.prototype
 
    //* Yang benar adalah:
-  //  Manager.prototype = Object.create(Employee.prototype);
+  // Manager.prototype = Object.create(Employee.prototype);
   
 
-  //  Manager.prototype.sayHello = function (name) {
-  //   console.log(`Hello ${name}, my name is Manager ${this.name}`);
-  //  }
+   Manager.prototype.sayHello = function (name) {
+    console.log(`Hello ${name}, my name is Manager ${this.name}`);
+   }
 
-  //  Employee.prototype.sayHello = function (name) {
-  //   console.log(`Hello ${name}, my name is Employee ${this.name}`);
-  //  }
+   Employee.prototype.sayHello = function (name) {
+    console.log(`Hello ${name}, my name is Employee ${this.name}`);
+   }
 
-  //  const employee = new Employee ('kelvin');
-  //  employee.sayHello('thirza');
+   const employee = new Employee ('kelvin');
+   employee.sayHello('thirza');
 
 
-  //  const manager = new Manager ('thirza');
-  //  manager.sayHello (`kelvin`)
+   const manager = new Manager ('thirza');
+   manager.sayHello (`kelvin`);
 
-  //  console.log(manager.sayHello);
-  //  console.log(employee);
-  //  console.log(manager);
+   console.log(manager.sayHello);
+   console.log(employee);
+   console.log(manager);
 
 //*   Membuat Class
 //*   Method Di Class
@@ -134,35 +134,35 @@
     
   //* Super Constructor
 
-  class Employee {
-    constructor(firstname) {
-      this.firstname = firstname;
-    }
+  // class Employee {
+  //   constructor(firstname) {
+  //     this.firstname = firstname;
+  //   }
 
-    sayHello(name) {
-      console.info(`Hello ${name},my name is employee ${this.name}`);
-    }
-  }
+  //   sayHello(name) {
+  //     console.info(`Hello ${name},my name is employee ${this.name}`);
+  //   }
+  // }
 
-  class Manager extends Employee {
+  // class Manager extends Employee {
     
-    constructor(firstname,lastname) {
-      super(firstname);
-      this.lastname = lastname;
-    }
+  //   constructor(firstname,lastname) {
+  //     super(firstname);
+  //     this.lastname = lastname;
+  //   }
 
-    sayHello(name) {
-      console.info(`Hello ${name},my name is ${this.firstname} ${this.lastname}`)
-    }
-  }
+  //   sayHello(name) {
+  //     console.info(`Hello ${name},my name is ${this.firstname} ${this.lastname}`)
+  //   }
+  // }
 
-  const kelvin = new Employee('Kelvin','Raditya');
-  kelvin.name = 'Kelvin';
-  kelvin.sayHello('Thirza')
+  // const kelvin = new Employee('Kelvin','Raditya');
+  // kelvin.name = 'Kelvin';
+  // kelvin.sayHello('Thirza')
 
-  const thirza = new Manager('Thirza','Zanetta');
-  thirza.name = 'Thirza';
-  thirza.sayHello('Kelvin')
+  // const thirza = new Manager('Thirza','Zanetta');
+  // thirza.name = 'Thirza';
+  // thirza.sayHello('Kelvin')
 
   
 
