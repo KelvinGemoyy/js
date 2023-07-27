@@ -5,11 +5,11 @@
 
 //* Bisapun juga dilakukan oleh API(Animasi selesai dijalankan,halaman selesai diload,dll)
 
-//* Cara 'mendengarkan' Event 
-//* Event Handler 
-//*  *Inline HTML Attribute
-//*  *Element Method
-//* addEventListener()
+    //* Cara 'mendengarkan' Event 
+    //* Event Handler 
+    //*  *Inline HTML Attribute
+    //*  *Element Method
+    //* addEventListener()
 
 //* Event Handler on<event> yang bernama onclick
 
