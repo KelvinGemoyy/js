@@ -12,11 +12,14 @@ class Person {
 
     set fullName(value){
         const result = value.split('');
-        this.firstname = result(0);
-        this.lastname = result(1);
+        this.firstname = result[0];
+        this.lastname = result[1];
     }
 }
 
    const kelvin = new Person('Kelvin', 'Falah')
    console.info(kelvin)
-   
+   console.info(kelvin.fullName);
+
+   kelvin.fullName = 'Muhammad Kelvin Raditya';
+   console.info(kelvin)
