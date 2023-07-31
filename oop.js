@@ -165,9 +165,34 @@
   // thirza.sayHello('Kelvin')
 
   //* Super Method
+  class animal {
+    constructor(name) {
+      this.name = name;
+    }
+
+    sayHello(name){
+      console.info(`Hai nama saya ${this.name},salam kenal`)
+    }
+  };
+
+  class Dog extends animal {
+    constructor(name,breed){
+      super(name);
+      this.breed = breed;
+    }
+ 
+
+  sayHello() {
+    super.sayHello();
+    console.log(`Saya adalah ${this.breed}`)
+  }
+
+  }
   
 
-  
+  const myDog = new Dog('spot','golden');
+  myDog.sayHello();
+
 
 
    
