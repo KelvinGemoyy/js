@@ -177,6 +177,9 @@
   }
  }
 
+ console.info(namaPanjang);
+ console.log(Nama);
+
  
 
 
