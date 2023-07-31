@@ -41,13 +41,13 @@
     //* Prototype Inheritance
     //* Object Instance 
 
-   function Employee(name) {
-    this.name = name;
-   }
+  //  function Employee(name) {
+  //   this.name = name;
+  //  }
 
-   function Manager(name) {
-     this.name = name;
-   }
+  //  function Manager(name) {
+  //    this.name = name;
+  //  }
 
    //! Cara yang salah adalah
    //! Manager.prototype = Employee.prototype
@@ -56,24 +56,24 @@
   // Manager.prototype = Object.create(Employee.prototype);
   
 
-   Manager.prototype.sayHello = function (name) {
-    console.log(`Hello ${name}, my name is Manager ${this.name}`);
-   }
+  //  Manager.prototype.sayHello = function (name) {
+  //   console.log(`Hello ${name}, my name is Manager ${this.name}`);
+  //  }
 
-   Employee.prototype.sayHello = function (name) {
-    console.log(`Hello ${name}, my name is Employee ${this.name}`);
-   }
+  //  Employee.prototype.sayHello = function (name) {
+  //   console.log(`Hello ${name}, my name is Employee ${this.name}`);
+  //  }
 
-   const employee = new Employee ('kelvin');
-   employee.sayHello('thirza');
+  //  const employee = new Employee ('kelvin');
+  //  employee.sayHello('thirza');
 
 
-   const manager = new Manager ('thirza');
-   manager.sayHello (`kelvin`);
+  //  const manager = new Manager ('thirza');
+  //  manager.sayHello (`kelvin`);
 
-   console.log(manager.sayHello);
-   console.log(employee);
-   console.log(manager);
+  //  console.log(manager.sayHello);
+  //  console.log(employee);
+  //  console.log(manager);
 
 //*   Membuat Class
 //*   Method Di Class
@@ -163,6 +163,9 @@
   // const thirza = new Manager('Thirza','Zanetta');
   // thirza.name = 'Thirza';
   // thirza.sayHello('Kelvin')
+
+  //* Super Method
+  
 
   
 
