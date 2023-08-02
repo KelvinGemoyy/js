@@ -173,12 +173,33 @@
 
  class namaPanjang extends Nama {
   tesNama() {
+    super.tesNama();
     console.info('Muhammad Raditya')
   }
  }
 
- console.info(namaPanjang);
- console.log(Nama);
+ 
+ const nama = new namaPanjang();
+ nama.tesNama();
+
+ //* Public Class Field
+ class Customer{
+   firstname;
+   lastname;
+   balance = 0;
+
+   constructor(){
+   }
+
+   sayHello(){
+
+   }
+ };
+
+ const kelvin = new Customer();
+ console.info(kelvin)
+
+
 
  
 
