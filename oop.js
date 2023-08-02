@@ -165,22 +165,28 @@
   // thirza.sayHello('Kelvin')
 
   //* Super Method
- class Nama {
-   tesNama() {
-    console.info('Kelvin')
-   }
- };
+//  class Nama {
+//    tesNama() {
+//     console.info('Kelvin')
+//    }
+//  };
 
- class namaPanjang extends Nama {
-  tesNama() {
-    super.tesNama();
-    console.info('Muhammad Raditya')
-  }
- }
+//  class namaPanjang extends Nama {
+//   tesNama() {
+//      super.tesNama();
+//     console.info('Muhammad Raditya')
+//   }
+//  }
 
  
- const nama = new namaPanjang();
- nama.tesNama();
+
+ 
+//  const nama = new namaPanjang();
+//  const nama1 = new namaPanjang();
+//  nama.tesNama();
+
+//  console.log(nama1);
+
 
  //* Public Class Field
 //  class Customer{
