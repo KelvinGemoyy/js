@@ -39,4 +39,9 @@
       };
 
       const crush1 = new Crush('Thirza',16,'1 SMA');
+      const crush2 = new Crush('Jihan',15,'3 SMP');
+
+      
+
       crush1.confess();
+      crush2.confess();
