@@ -189,20 +189,20 @@
 
 
  //* Public Class Field
-//  class Customer{
-//    firstname;
-//    lastname;
-//    balance = 0;
+ class Customer{
+   firstname;
+   lastname;
+   balance = 0;
 
-//    constructor(firstname,lastname){
-//     this.firstname = firstname;
-//     this.lastname = lastname;
-//    }
+   constructor(firstname,lastname){
+    this.firstname = firstname;
+    this.lastname = lastname; 
+   }
 
-//    sayHello(){
+   sayHello(){
 
-//    }
-//  };
+   }
+ };
 
 //  const kelvin = new Customer();
 //  console.info(kelvin)
