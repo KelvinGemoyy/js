@@ -279,11 +279,11 @@
   // console.info(typeof kelvin);
   // console.info(typeof tasya);
 
-  // console.info(kelvin instanceof Employee);
-  // console.info(kelvin instanceof Manager);
+  // console.info(kelvin instanceof Employee); // true 
+  // console.info(kelvin instanceof Manager); // false
 
-  // console.info(tasya instanceof Employee)
-  // console.info(tasya instanceof Manager)
+  // console.info(tasya instanceof Employee) // true
+  // console.info(tasya instanceof Manager) // true
 
   //* Static Class Field
   // class Configuration {
@@ -339,6 +339,29 @@
   //   console.log(Error);
 
   //* Error Handling 
+   class MathUtil {
+      static sum (...numbers) {
+        if (numbers.length == 0) {
+          throw new Error('Total parameter harus lebih dari 0');
+        }
+           
+      let total = 0; 
+      for (const number of numbers)  {
+           total += number ;
+        }
+        return total;
+      }
+    }
+
+   try {
+      console.info(MathUtil.sum());
+      console.info('Kelvin')
+   } catch (error) {
+     console.info(`Terjadi error : ${error.massage}`)
+   } finally {
+    console.info('program selesai');
+   }
+
 
 
 
