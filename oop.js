@@ -264,7 +264,27 @@
   // kelvin.say('Thirza');
 
   //* Operator Instanceof
-  
+  // class Employee {
+
+  // }
+
+  // class Manager extends Employee {
+
+  // }
+
+  // const kelvin = new Employee();
+  // const tasya = new Manager();
+
+
+  // console.info(typeof kelvin);
+  // console.info(typeof tasya);
+
+  // console.info(kelvin instanceof Employee);
+  // console.info(kelvin instanceof Manager);
+
+  // console.info(tasya instanceof Employee)
+  // console.info(tasya instanceof Manager)
+
 
 
 
