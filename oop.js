@@ -285,6 +285,9 @@
   // console.info(tasya instanceof Employee)
   // console.info(tasya instanceof Manager)
 
+  //* Static Class Field
+  
+
 
 
 
