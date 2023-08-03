@@ -5,6 +5,8 @@
 // Ketika membuat const function kita membuat keyword new
 // Menambahkan property this pada const function
 
+const { ValidationError } = require("webpack");
+
 //* contoh 1
 // function OrangBaru(namaDepan,namaBelakang) {
 //    this.namaDepan ='';
@@ -339,6 +341,14 @@
   //   console.log(Error);
 
   //* Error Handling 
+
+  class ValidationError extends Error {
+    constructor(message, field) {
+     super(message);
+     this.field = field;
+    }
+ }
+
    class MathUtil {
       static sum (...numbers) {
         if (numbers.length == 0) {
@@ -357,11 +367,19 @@
       console.info(MathUtil.sum());
       console.info('Kelvin')
    } catch (error) {
-     console.info(`Terjadi error : ${error.massage}`)
+      if (Error instanceof ValidationError ) {
+         console.info(`Terjadi error di field ${error.field} dengan error ${error.message}`);
+      } else {
+        console.info(`Terjadi error : ${error.message}`)
+      }
    } finally {
     console.info('program selesai');
    }
+  
 
+  
+
+  
 
 
 
