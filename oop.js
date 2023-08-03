@@ -240,28 +240,33 @@
 //  console.info(counter);
 
 //* Private Method
-  class Person {
-    say(name){
-      if(name){
-        this.#sayWithName(name);
-      } else{
-        this.#sayWithoutName();
-      }
-    }
+  // class Person {
+  //   say(name){
+  //     if(name){
+  //       this.#sayWithName(name);
+  //     } else{
+  //       this.#sayWithoutName();
+  //     }
+  //   }
 
-    #sayWithoutName(){
-      console.info('Hai');
-    }
+  //   #sayWithoutName(){
+  //     console.info('Hai');
+  //   }
 
-    #sayWithName(name){
-      console.info(`Hai nama saya adalah ${name}`);
-    }
+  //   #sayWithName(name){
+  //     console.info(`Hai nama saya adalah ${name}`);
+  //   }
 
 
-  }
+  // }
 
-  const kelvin = new Person();
-  kelvin.say('Thirza');
+  // const kelvin = new Person();
+  // kelvin.say('Thirza');
+
+  //* Operator Instanceof
+  
+
+
 
 
 
