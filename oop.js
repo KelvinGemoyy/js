@@ -286,21 +286,22 @@
   // console.info(tasya instanceof Manager)
 
   //* Static Class Field
-  class Configuration {
-     static name = 'Belajar Javascript Dasar';
-     static ver = 1.0;
-     static author = 'Kelvin Falah';
-  }
+  // class Configuration {
+  //    static name = 'Belajar Javascript Dasar';
+  //    static ver = 1.0;
+  //    static author = 'Kelvin Falah';
+  // }
 
-  const config = new Configuration();
-  console.info(config);
+  // const config = new Configuration();
+  // console.info(config);
 
-  Configuration.author = 'Kelvin Raditya';
+  // Configuration.author = 'Kelvin Raditya';
 
-  console.info(Configuration.name);
-  console.info(Configuration.ver);
-  console.info(Configuration.author);
+  // console.info(Configuration.name);
+  // console.info(Configuration.ver);
+  // console.info(Configuration.author);
 
+  //* Static Method
   
 
 
